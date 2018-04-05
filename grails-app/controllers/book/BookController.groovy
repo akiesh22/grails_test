@@ -5,11 +5,8 @@ import grails.converters.JSON
 class BookController {
 
     def index() {
-        print request.isPost()
-        print request.isGet()
-        print request.isXhr()
-
         def obj  = Book.list() as JSON
+        print obj
         if (request.isXhr()){
             render obj
         }else

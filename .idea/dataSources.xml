@@ -18,6 +18,12 @@
       </driver-properties>
       <libraries>
         <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL Connector/J/5.1.45/mysql-connector-license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/MySQL Connector/J/5.1.45/mysql-connector-java-5.1.45-bin.jar</url>
+        </library>
+        <library>
           <url>file://$USER_HOME$/.grails/ivy-cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.22.jar</url>
         </library>
       </libraries>

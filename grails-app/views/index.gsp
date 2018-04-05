@@ -68,6 +68,26 @@
             }]
         })
 }
+    $(document).ready(function(){
+      $('#myTable').DataTable({
+        "processing" :  true,
+        "serverSide" : true,
+        "filter" :  false,
+        "ajax":{
+            "url":"${createLink(controller: 'book', action: 'index')}",
+            "type":"POST",
+            "dataSrc":"",
+            "dataType":"json"
+        },
+        "columns" : [ {
+                "data" : "id"
+            }, {
+                "data" : "name"
+            }, {
+                "data" : "author"
+            }]
+      });
+    });
 
 </g:javascript>
 </body>
